@@ -57,4 +57,5 @@ graph scheduleClashes {
 	Piotr[label="Piotr\nNeural Networks\nas Category"];
 	Michał[label="Michał\nWeb development with\nServant and ReasonML"];
 
+	rankdir="LR";
 }
