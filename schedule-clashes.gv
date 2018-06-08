@@ -40,22 +40,22 @@ graph scheduleClashes {
 	Filip   -- Piotr;
 
 	// beginners track
-	Julie[label="Julie\nProfunctors"];
-	MarcinS[label="Marcin S\nCategory Theory"];
-	Ryan[label="Ryan\nNAND->Lambda"];
-	Filip[label="Filip\nReally\nReal-World Haskell"];
-	Tom[label="Tom\nTesting"];
-	Chris[label="Chris\nDeploying Haskell\nto the Cloud"];
+	Julie[label="Julie\nProfunctors\n6x"];
+	MarcinS[label="Marcin S\nCategory Theory\n6x"];
+	Ryan[label="Ryan\nNAND->Lambda\n5x"];
+	Filip[label="Filip\nReally\nReal-World Haskell\n5x"];
+	Tom[label="Tom\nTesting\n6x"];
+	Chris[label="Chris\nDeploying Haskell\nto the Cloud\n4x"];
 
 	// advanced track
-	Carter[label="Carter\nLinear dependant types"];
-	Laurens[label="Laurens\nSTM"];
-	Christophe[label="Christophe\nReactive\nprogramming"];
-	Krzysztof[label="Krzysztof\nIntoduction\nto Dependant Types"];
-	MarcinM[label="Marcin M\nFunctional optics"];
-	Jakub[label="Jakub\nServerless Haskell\non Azure"];
-	Piotr[label="Piotr\nNeural Networks\nas Category"];
-	Michał[label="Michał\nWeb development with\nServant and ReasonML"];
+	Carter[label="Carter\nLinear dependant types\n4x"];
+	Laurens[label="Laurens\nSTM\n5x"];
+	Christophe[label="Christophe\nReactive\nprogramming\n1x"];
+	Krzysztof[label="Krzysztof\nIntoduction\nto Dependant Types\n4x"];
+	MarcinM[label="Marcin M\nFunctional optics\n4x"];
+	Jakub[label="Jakub\nServerless Haskell\non Azure\n4x"];
+	Piotr[label="Piotr\nNeural Networks\nas Category\n4x"];
+	Michał[label="Michał\nWeb development with\nServant and ReasonML\n4x"];
 
 	rankdir="LR";
 }
