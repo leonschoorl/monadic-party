@@ -1,0 +1,60 @@
+graph scheduleClashes {
+	// Monday
+	Julie   -- Carter;
+	Julie   -- Carter;
+	MarcinS -- Laurens;
+	MarcinS -- Laurens;
+	Ryan    -- Laurens;
+	Ryan    -- Christophe;
+
+	// Tuesday
+	MarcinS -- Krzysztof;
+	MarcinS -- Krzysztof;
+	Ryan    -- MarcinM;
+	Ryan    -- MarcinM;
+	Julie   -- Carter;
+	Julie   -- Carter;
+
+	// Wednesday
+	Filip   -- Laurens;
+	Filip   -- Laurens;
+	Filip   -- Jakub;
+	Tom     -- Jakub;
+	Tom     -- Krzysztof;
+	Ryan    -- Krzysztof;
+
+	// Thursday
+	Tom     -- Piotr;
+	Tom     -- Piotr;
+	Julie   -- Jakub;
+	Julie   -- Jakub;
+	Chris   -- Michał;
+	Chris   -- Michał;
+
+	// Friday
+	Tom     -- MarcinM;
+	Tom     -- MarcinM;
+	Chris   -- Michał;
+	Chris   -- Michał;
+	Filip   -- Piotr;
+	Filip   -- Piotr;
+
+	// beginners track
+	Julie[label="Julie\nProfunctors"];
+	MarcinS[label="Marcin S\nCategory Theory"];
+	Ryan[label="Ryan\nNAND->Lambda"];
+	Filip[label="Filip\nReally\nReal-World Haskell"];
+	Tom[label="Tom\nTesting"];
+	Chris[label="Chris\nDeploying Haskell\nto the Cloud"];
+
+	// advanced track
+	Carter[label="Carter\nLinear dependant types"];
+	Laurens[label="Laurens\nSTM"];
+	Christophe[label="Christophe\nReactive\nprogramming"];
+	Krzysztof[label="Krzysztof\nIntoduction\nto Dependant Types"];
+	MarcinM[label="Marcin M\nFunctional optics"];
+	Jakub[label="Jakub\nServerless Haskell\non Azure"];
+	Piotr[label="Piotr\nNeural Networks\nas Category"];
+	Michał[label="Michał\nWeb development with\nServant and ReasonML"];
+
+}
