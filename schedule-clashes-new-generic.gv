@@ -1,0 +1,86 @@
+graph scheduleClashes {
+	// Monday
+	Julie   -- Krzysztof;
+	Julie   -- Krzysztof;
+	Chris   -- Carter;
+	Chris   -- Carter;
+	Ryan    -- MarcinM;
+	Ryan    -- MarcinM;
+
+	// Tuesday
+	Chris   -- Carter;
+	Chris   -- Carter;
+	Ryan    -- MarcinM;
+	Ryan    -- MarcinM;
+	Julie   -- Krzysztof;
+	Julie   -- Krzysztof;
+
+	// Wednesday
+	Filip   -- Laurens;
+	Filip   -- Laurens;
+	Filip   -- Laurens;
+	Tom     -- Jakub;
+	Tom     -- Jakub;
+	Ryan    -- Christophe;
+
+	// Thursday
+	Tom     -- Piotr;
+	Tom     -- Piotr;
+	Julie   -- Jakub;
+	Julie   -- Jakub;
+	MarcinS -- Michał;
+	MarcinS -- Michał;
+
+	// Friday
+	Tom     -- Piotr;
+	Tom     -- Piotr;
+	MarcinS -- Michał;
+	MarcinS -- Michał;
+	Filip   -- Laurens;
+	Filip   -- Laurens;
+
+/*
+	// beginners track
+	Julie[label="Julie\nProfunctors\n6x"];
+	MarcinS[label="Marcin S\nCategory Theory\n4x"];
+	Ryan[label="Ryan\nNAND->Lambda\n5x"];
+	Filip[label="Filip\nReally\nReal-World Haskell\n5x"];
+	Tom[label="Tom\nTesting\n6x"];
+	Chris[label="Chris\nDeploying Haskell\nto the Cloud\n4x"];
+
+	// advanced track
+	Carter[label="Carter\nLinear dependant types\n4x"];
+	Laurens[label="Laurens\nSTM\n5x"];
+	Christophe[label="Christophe\nReactive\nprogramming\n1x"];
+	Krzysztof[label="Krzysztof\nIntoduction\nto Dependant Types\n4x"];
+	MarcinM[label="Marcin M\nFunctional optics\n4x"];
+	Jakub[label="Jakub\nServerless Haskell\non Azure\n4x"];
+	Piotr[label="Piotr\nNeural Networks\nas Category\n4x"];
+	Michał[label="Michał\nWeb development with\nServant and ReasonML\n4x"];
+*/
+
+
+	// beginners track
+	Julie[label="???\n6x"];
+	MarcinS[label="???\n4x"];
+	Ryan[label="???\n5x"];
+	Filip[label="???\n5x"];
+	Tom[label="???\n6x"];
+	Chris[label="???\n4x"];
+
+	// advanced track
+	Carter[label="???\n4x"];
+	Laurens[label="Laurens\nSTM\n5x"];
+	Christophe[label="Christophe\nReactive\nprogramming\n1x"];
+	Krzysztof[label="???\n4x"];
+	MarcinM[label="???\n4x"];
+	Jakub[label="???\n4x"];
+	Piotr[label="???\n4x"];
+	Michał[label="???\n4x"];
+
+	rankdir="LR";
+	node[shape=none];
+	beginners -- advanced[label="scheduled concurrently with"];
+	beginners[label="Beginners track"];
+	advanced[label="Advanced track"];
+}
