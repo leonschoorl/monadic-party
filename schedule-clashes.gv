@@ -58,4 +58,8 @@ graph scheduleClashes {
 	Michał[label="Michał\nWeb development with\nServant and ReasonML\n4x"];
 
 	rankdir="LR";
+	node[shape=none];
+	beginners -- advanced[label="scheduled concurrently with"];
+	beginners[label="Beginners track"];
+	advanced[label="Advanced track"];
 }
