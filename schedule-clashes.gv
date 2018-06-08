@@ -41,7 +41,7 @@ graph scheduleClashes {
 
 	// beginners track
 	Julie[label="Julie\nProfunctors\n6x"];
-	MarcinS[label="Marcin S\nCategory Theory\n6x"];
+	MarcinS[label="Marcin S\nCategory Theory\n4x"];
 	Ryan[label="Ryan\nNAND->Lambda\n5x"];
 	Filip[label="Filip\nReally\nReal-World Haskell\n5x"];
 	Tom[label="Tom\nTesting\n6x"];
