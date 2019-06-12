@@ -1,0 +1,85 @@
+
+graph scheduleClashes {
+
+	// Tuesday
+	Christophe -- Alexey -- Zans;
+	Christophe -- Alexey -- Zans;
+	Christophe -- Alexey -- Zans;
+
+	Ryan       -- Chris  -- Edward;
+	Ryan       -- Chris  -- Edward;
+	Ryan;
+
+	// Wednesday
+	Christophe -- Laurens -- Paul;
+	Christophe -- Laurens -- Paul;
+	Christophe -- Laurens -- Marcin;
+
+	Ryan       -- Chris   -- Zans;
+	Ryan       -- Chris   -- Zans;
+    Ryan                  -- Zans;
+
+	// Thursday
+	Tom -- Arthur -- Edward;
+	Tom -- Arthur -- Edward;
+	Tom -- Alexey -- Krzysztof;
+
+	Libby -- Alexey -- Krzysztof;
+	Libby -- Alexey -- Krzysztof;
+	Justin;
+
+	// Friday
+	Libby -- Laurens -- Marcin;
+	Libby -- Laurens -- Marcin;
+	Justin -- Laurens -- Krzysztof;
+
+	Tom -- Arthur -- Paul;
+	Tom -- Arthur -- Paul;
+
+
+	rankdir="LR";
+	node[shape=none];
+	beginner -- intermediate -- advanced; // [label="scheduled concurrently with"];
+	beginner[label="Beginner track"];
+	intermediate[label="Intermediate track"];
+	advanced[label="Advanced track"];
+
+/*
+	Christophe[label="Christophe Scholliers:\nA project based approach to learning Haskell\n6 hours"];
+	Ryan[label="Ryan Moore:\nPractical Cryptography with Haskell\n6 hours"];
+	Justin[label="Justin Woo:\nReal World PureScript\n2 hours"];
+	Tom[label="Tom Sydney Kerckhove:\nTesting for beginners\n6 hours"];
+	Libby[label="Libby Horacek:\nLearn Haskell by making a website\n4 hours"];
+
+	Marcin[label="Marcin Szamotulski:\nTyped Protocols, Session Type Framework for Applications\n3 hours"];
+	Alexey[label="Alexey Kuleshevich:\nHaskell arrays with Massiv\n6 hours"];
+	Laurens[label="Laurens Duijvesteijn:\nHaskell for boring software\n6 hours"];
+	Chris[label="Chris Penner:\nComonads By Example\n4 hours"];
+	Arthur[label="Arthur Xavier:\nType-safe embedded domain-specific languages\n4 hours"];
+
+	Edward[label="Edward Kmett:\nGuanxi - Logic Programming in Haskell\n4 hours"];
+	Krzysztof[label="Krzysztof Gogolewski:\nLinear types\n4 hours"];
+	Paul[label="Paul Kinsky:\nLazily Diffing Merkle Trees with Recursion Schemes\n4 hours"];
+	Zans[label="Zans Mihejevs:\nImplementing a Dependently Typed Language from Scratch\n6 hours"];
+*/
+
+	// beginner track
+	subgraph {
+		rank=same;
+		beginner,Christophe,Ryan,Justin,Tom,Libby;
+	}
+
+	// intermediate track
+	subgraph {
+		rank=same;
+		intermediate,Marcin,Alexey,Laurens,Chris,Arthur;
+	}
+
+	// advanced track
+	subgraph {
+		rank=same;
+		advanced,Edward,Krzysztof,Paul,Zans;
+	}
+
+
+}
