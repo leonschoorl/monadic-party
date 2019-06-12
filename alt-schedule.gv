@@ -1,0 +1,52 @@
+graph scheduleClashes {
+
+rankdir="LR";
+
+b6a -- i6a -- a6;
+b6b -- i6b;
+       i6b -- a4a[style=dashed,label="4h"];
+b4  -- i4a -- a4b;
+b5  -- i4b[style=dashed,label="4h"];
+       i4b -- a4c;
+b2  -- i3[style=dashed,label="2h"];
+b5  -- i3[style=dashed,label="1h"];
+
+node[shape=none];
+beginner -- intermediate -- advanced; //[label="scheduled concurrently with"];
+beginner[label="Beginner track"];
+intermediate[label="Intermediate track"];
+advanced[label="Advanced track"];
+
+// beginner track
+subgraph {
+	rank=same;
+	beginner;
+	b6a[label="6h"];
+	b6b[label="6h"];
+	b5[label="5h"];
+	b4[label="4h"];
+	b2[label="2h"];
+}
+
+// intermediate track
+subgraph {
+	rank=same;
+	intermediate;
+	i6a[label="6h"];
+	i6b[label="6h"];
+	i4a[label="4h"];
+	i4b[label="4h"];
+	i3[label="3h"];
+}
+
+// advanced track
+subgraph {
+	rank=same;
+	advanced;
+	a6[label="6h"];
+	a4a[label="4h"];
+	a4b[label="4h"];
+  a4c[label="4h"];
+}
+
+}
