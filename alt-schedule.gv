@@ -1,15 +1,48 @@
 graph scheduleClashes {
 
 rankdir="LR";
+ratio=1.1
 
 b6a -- i6a -- a6;
+b6a -- i6a -- a6;
+b6a -- i6a -- a6;
+b6a -- i6a -- a6;
+b6a -- i6a -- a6;
+b6a -- i6a -- a6;
+
 b6b -- i6b;
-       i6b -- a4a[style=dashed,label="4h"];
+b6b -- i6b;
+b6b -- i6b;
+b6b -- i6b;
+b6b -- i6b;
+b6b -- i6b;
+
+       i6b -- a4a;
+       i6b -- a4a;
+       i6b -- a4a;
+       i6b -- a4a;
+
+
 b4  -- i4a -- a4b;
-b5  -- i4b[style=dashed,label="4h"];
+b4  -- i4a -- a4b;
+b4  -- i4a -- a4b;
+b4  -- i4a -- a4b;
+
+b5  -- i4b;
+b5  -- i4b;
+b5  -- i4b;
+b5  -- i4b;
+
        i4b -- a4c;
-b2  -- i3[style=dashed,label="2h"];
-b5  -- i3[style=dashed,label="1h"];
+       i4b -- a4c;
+       i4b -- a4c;
+       i4b -- a4c;
+
+b2  -- i3;
+b2  -- i3;
+
+b5  -- i3;
+
 
 node[shape=none];
 beginner -- intermediate -- advanced; //[label="scheduled concurrently with"];
